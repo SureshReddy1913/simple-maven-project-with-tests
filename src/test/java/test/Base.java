@@ -37,5 +37,10 @@ class Base {
             throw new AssumptionViolatedException("skipping");
         }
     }
+    public int factorial(int n) {
+    	System.out.println("checking for->"+n);
+		if(n==0||n==1) return 1;
+		return (n-1)*factorial(n-1);
+	}
 
 }
