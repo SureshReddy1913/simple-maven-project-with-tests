@@ -38,9 +38,15 @@ class Base {
         }
     }
     public int factorial(int n) {
-    	System.out.println("checking for->"+n);
+    	
 		if(n==0||n==1) return 1;
-		return (n-1)*factorial(n-1);
+		int product=1,i=1;
+		while(i<=n) {
+			product=product*i;
+			i++;
+		} 
+		System.out.println(n+" factorial is->"+product);
+		return product;
 	}
 
 }
